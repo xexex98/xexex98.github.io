@@ -1,0 +1,102 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.space {
+	height: 100vh;
+	background: url(./space.png);
+	display: flex;
+}
+
+.planet-area {
+	display: flex;
+	align-items: flex-end;
+	width: 500px;
+	height: 100%;
+}
+
+.planet {
+	width: 700px;
+	height: 700px;
+	z-index: 2;
+}
+
+.rocket {
+	width: 200px;
+	height: 200px;
+	z-index: 3;
+	position: absolute;
+	bottom: 370px;
+	left: 500px;
+	transform: rotate(40deg);
+}
+
+.control-panel {
+	width: 500px;
+	height: 300px;
+	background:
+		linear-gradient(27deg, #501414 5px, transparent 5px) 0 5px,
+		linear-gradient(207deg, #8a1818 5px, transparent 5px) 10px 0px,
+		linear-gradient(27deg, rgb(148, 30, 30) 5px, transparent 5px) 0px 10px,
+		linear-gradient(207deg, rgb(167, 56, 56) 5px, transparent 5px) 10px 5px,
+		linear-gradient(90deg, #791919 10px, transparent 10px),
+		linear-gradient(#442929 25%, #553939 25%, #7e6464 50%, transparent 50%, transparent 75%, #633a3a 75%, #b87171);
+	background-color: #501e1e;
+	background-size: 20px 20px;
+	background-size: 109px 109px, 109px 109px, 100% 6px, 109px 109px, 109px 109px;
+	background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+	margin: auto auto auto 350px;
+	display: flex;
+	border-radius: 10px;
+}
+
+.control-panel__inner {
+	width: 90%;
+	height: 90%;
+	background-color: rgb(173, 155, 122);
+	margin: auto;
+	border-radius: 10px;
+	text-align: center;
+	padding-top: 10px;
+}
+
+.passwordField {
+	background-color: grey;
+	border: solid 2px rgb(72, 72, 92);
+	color: brown;
+}
+
+.check-buttons {
+	width: 70%;
+	margin: 10px auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.check-buttons input {
+	width: 25px;
+}
+
+.levers {
+	width: 70%;
+	margin: 10px auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.levers input {
+	-webkit-appearance: slider-vertical;
+	width: 10px;
+}
+
+.launch {
+	text-align: center;
+	align-items: center;
+	margin-top: 5%;
+	width: 50px;
+	height: 30px;
+	border-radius: 20px;
+	background-color: rgb(187, 165, 165);
+}

@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: url(./world.png) no-repeat;
+}
+
+h1 {
+    margin-top: 1%;
+    text-align: center;
+}
+
+.quiz-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 350px;
+    margin: 2% auto;
+}
+
+.mid {
+    width: 100px;
+    height: 100px;
+    margin: 2% 0;
+    position: relative;
+
+}
+
+.country-area, 
+.country-back,
+.card {
+    color: rgb(67, 23, 223);
+    border-radius: 15px;
+    display: flex;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+
+}
+
+.country-area {
+    z-index: 2;
+    background: rgb(231, 231, 184);
+    backface-visibility: hidden;
+}
+
+.country-back {
+    z-index: 1;
+    background: rgb(247, 130, 62);
+    transform: rotateY(180deg);
+}
+/*animathion*/
+
+.card {
+
+    transition: all 1s linear;
+    transform-style: preserve-3d;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
